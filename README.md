@@ -52,13 +52,14 @@ This is my personal Neovim configuration. It is a work in progress and I am cons
 - **Go**
 
 ## File Structure
+```
 nvim/
 ├── init.lua
 └── lua/
     ├── plugins/
     └── config/
         └── lazy.lua
-
+ ```
 - **init.lua**: This is the main configuration file.
 - **lua/**: This directory contains all the Lua configuration files.
 - **lua/plugins/**: This directory contains all the plugins.
