@@ -1,6 +1,28 @@
 # My Neovim Configuration
 
+![My_Neovim_thumbnail](https://res.cloudinary.com/zen-coffee/image/upload/v1726065752/thumbnail/nvim-thumbnail_yjmwsf.png)
+
 This is my personal Neovim configuration. It is a work in progress and I am constantly tweaking it to make it better. I have tried to keep it as minimal as possible and only include the plugins that I find useful.
+
+## Installation
+ 1. Remove the previous data
+	```bash
+	rm -rf ~/.config/nvim 
+	rm -rf ~/.local/state/nvim 
+	rm -rf ~/.local/share/nvim
+	 ```
+ 2. Go to neovim configuration directory
+	 ```bash
+	 cd ~./config/nvim
+	 ```
+ 3.  Clone this repository
+	 ```bash
+	 git clone https://github.com/zidanhafiz/nvim-config.git
+	 ```
+ 4. There you go!
+	 ```bash
+	 nvim
+	 ```
 
 ## Features
 - **Lazy**: I use `lazy` to manage plugins. This means that plugins are only loaded when they are needed.
@@ -30,6 +52,13 @@ This is my personal Neovim configuration. It is a work in progress and I am cons
 - **Go**
 
 ## File Structure
+nvim/
+├── init.lua
+└── lua/
+    ├── plugins/
+    └── config/
+        └── lazy.lua
+
 - **init.lua**: This is the main configuration file.
 - **lua/**: This directory contains all the Lua configuration files.
 - **lua/plugins/**: This directory contains all the plugins.
